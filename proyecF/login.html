@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Iniciar </title>
+</head>
+<body>
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form" method="POST">
+            <div class="">
+                <span class="peli2 text-uppercase text-light px-2">Pelis </span>
+                <span class="hub2 text-uppercase px-2 ms-n1">Hub</span>
+            </div>
+
+          <input type="text" placeholder="Nombre completo" required/>
+          <input type="text" placeholder="@usuario" required/>
+          <input type="email" placeholder="Correo electronico" required/>
+          <input type="password" placeholder="Contraseña" required/>
+          <button type="submit">Registrarse</button>
+          <p class="message">Ya estás registrado? <a href="#">Inicia sesion</a></p>
+        </form>
+        <form class="login-form" method="post">
+            <div class="">
+                <span class="peli2 text-uppercase text-light px-2">Pelis </span>
+                <span class="hub2 text-uppercase px-2 ms-n1">Hub</span>
+            </div>
+          <input type="text" placeholder="Correo electronico" required />
+          <input type="password" placeholder="Contraseña" required/>
+          <button type="submit" name="send2"> Iniciar sesion</button>
+          <p class="message">Aún no estás registrado? <a href="#">Crea tu cuenta ahora</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

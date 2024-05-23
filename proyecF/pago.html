@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pago.css">
+    <title>Pagos</title>
+</head>
+<body>
+
+    <div class="container"> 
+  
+        <form action="PlcPagas.html" method="GET"> 
+            <center>
+                <h1 class="title text-center">Pago</h1> 
+            </center>
+           
+            <div class="row"> 
+                
+                <div class="col"> 
+
+                    <div class="inputBox"> 
+                        <label for="name"> 
+                           Nombre completo
+                          </label> 
+                        <input type="text" id="name" name="name"
+                               placeholder="Nombre completo" 
+                               required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="email"> 
+                              Correo electronico 
+                          </label> 
+                        <input type="email" id="email" name="email"
+                               placeholder="ejemplo@pelihub.com" 
+                               required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="address"> 
+                              Direccion 
+                          </label> 
+                        <input type="text" id="address" name="address"
+                               placeholder="Eje: Calle 1 #2-3" 
+                               required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="city"> 
+                              Ciudad 
+                          </label> 
+                        <input type="text" id="city" name="city"
+                               placeholder="Eje: Barranquilla" 
+                               required> 
+                    </div> 
+  
+                    <div class="flex"> 
+  
+                        <div class="inputBox"> 
+                            <label for="state"> 
+                                  Departamento
+                              </label> 
+                            <input type="text" id="state" name="state"
+                                   placeholder="Eje: Atlantico" 
+                                   required> 
+                        </div> 
+  
+  
+                    </div> 
+  
+                </div> 
+                <div class="col"> 
+  
+                    <div class="inputBox"> 
+                        <label for="">Sólo aceptamos estas tarjetas</label>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXQ-EAw8y32fqBTYiLJn1ic7J10tipwuspYGeUo0q&s" alt="credit/debit card image"> 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png" alt="" srcset="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="" srcset="">
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="cardName"> 
+                            Nombre en la tarjeta 
+                          </label> 
+                        <input type="text" id="cardName" name="cardName"
+                               placeholder="Nombre en tarjeta" 
+                               required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="cardNum"> 
+                              Numero de la tarjeta 
+                          </label> 
+                        <input type="number" id="cardNum" name="cardNum"
+                               placeholder="1111-2222-3333-4444" 
+                               maxlength="19" required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="expMonth">Mes de vencimiento</label> 
+                        <select name="expMonth" id="expMonth"> 
+                            <option value="">Selecionar</option> 
+                            <option value="January">Enero</option> 
+                            <option value="February">Febrero</option> 
+                            <option value="March">Marzo</option> 
+                            <option value="April">Abril</option> 
+                            <option value="May">Mayo</option> 
+                            <option value="June">Junio</option> 
+                            <option value="July">Julio</option> 
+                            <option value="August">Agosto</option> 
+                            <option value="September">Septiembre</option> 
+                            <option value="October">Octubre</option> 
+                            <option value="November">Noviembre</option> 
+                            <option value="December">Diciembre</option> 
+                        </select> 
+                    </div> 
+  
+  
+                    <div class="flex"> 
+                        <div class="inputBox"> 
+                            <label for="expYear">Año de Exp</label> 
+                            <select name="expYear" id="expYear"> 
+                                <option value="">Seleccionar</option> 
+                                <option value="2024">2024</option> 
+                                <option value="2025">2025</option> 
+                                <option value="2026">2026</option> 
+                                <option value="2027">2027</option> 
+                                <option value="2028">2028</option> 
+                                <option value="2029">2029</option> 
+                                <option value="2030">2030</option> 
+                            </select> 
+                        </div> 
+  
+                        <div class="inputBox"> 
+                            <label for="cvv">CVV</label> 
+                            <input type="number" id="cvv" name="cvv"
+                                   placeholder="1234" required> 
+                        </div> 
+                    </div> 
+  
+                </div> 
+  
+            </div> 
+  
+           <input type="submit" value= " Pagar" class="submit_btn">
+        
+        </form> 
+  
+    </div> 
+    <script type="text/javascript" src="js/main.js"></script> 
+
+</body>
+</html>

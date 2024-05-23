@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelicula</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/PlcGratis.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a href="" class="text-decoration-none d-block">
+          <span class="peli h1 text-uppercase text-light px-2">Pelis</span>
+          <span class="hub h1 text-uppercase px-2 ms-n1">Hub</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#peliculas">Películas</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control me-2"
+              placeholder="Buscar películas..."
+              oninput="buscarPeliculas()"
+            />
+          </div>
+        </div>
+        <a class="acceder text-decoration-none ms-auto" href="login.html">
+          <button type="button" class="btn">Acceder</button>
+        </a>
+      </div>
+    </nav>
+
+    <div class="card-container" id="peliculas">
+      <!-- pelicula1 -->
+      <div class="card">
+        <img
+          src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZSu4xjtKgA1SJLiMPEz4okq3MyyLqXzEf0o8sjJ-EvA&s"
+          alt="Movie 1"
+        />
+        <div class="card-info">
+          <h3>Captain Tsubasa</h3>
+          <p>
+            La historia tiene como tema central el fútbol, narrando las
+            intrépidas aventuras de Tsubasa Ōzora y sus amigos desde la infancia
+            hasta que son profesionales y llegan a formar parte de la selección
+            nacional de Japón.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula2 -->
+      <div class="card">
+        <img
+          src="https://images.justwatch.com/backdrop/206429034/s640/falsa-identidad-2018/falsa-identidad-2018"
+          alt="Movie 2"
+        />
+        <div class="card-info">
+          <h3>Falsa Identidad</h3>
+          <p>
+            La historia de Isabel Fernández y Diego Hidalgo, dos completos
+            desconocidos, que deben asumir la identidad de un sólido matrimonio
+            para huir de sus enemigos, pero el pasado los alcanza.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula3 -->
+      <div class="card">
+        <img
+          src="  https://estaticos-cdn.prensaiberica.es/clip/25586a03-6250-43f6-85cf-84b88c2ece8f_16-9-discover-aspect-ratio_default_0.jpg"
+          alt="Movie 3"
+        />
+        <div class="card-info">
+          <h3>Pablo Escobar</h3>
+          <p>
+            Pablo Emilio Escobar Gaviria fue un narcotraficante, criminal,
+            terrorista y político colombiano, fundador y máximo líder del Cartel
+            de Medellín.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula 4 -->
+      <div class="card">
+        <img
+          src="  https://caracoltv.brightspotcdn.com/dims4/default/17f8f1b/2147483647/strip/true/crop/1102x720+89+0/resize/320x209!/quality/90/?url=https%3A%2F%2Fcaracol-brightspot.s3-us-west-2.amazonaws.com%2Fassets%2Fcaracoltv%2Flamamadel10finalgale.jpg "
+          alt="Movie 4"
+        />
+        <div class="card-info">
+          <h3>La Mama Del 10</h3>
+          <p>
+            Tina Manotas y sus hijos se ven obligados a abandonar su pueblo
+            natal y mudarse a la capital. La familia enfrenta en la ciudad todas
+            las dificultades que conlleva la falta de dinero..
+          </p>
+        </div>
+      </div>
+      <!-- pelicula 5 -->
+      <div class="card">
+        <img
+          src="   https://images.vix.com/prd/videos/video:mcp:4436850/3181b14fb8ba47ea1e9865ff3e8127ba "
+          alt="Movie 5"
+        />
+        <div class="card-info">
+          <h3>La Hija Del Mariachi</h3>
+          <p>
+            Emiliano, un empresario mexicano adinerado, es víctima de un fraude
+            perpetrado por sus socios y amigos.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula 6 -->
+      <div class="card">
+        <img
+          src="   https://hips.hearstapps.com/es.h-cdn.co/teleprogramaes/images/telenovela/2017/marzo/pasion-de-gavilanes-protagonistas-ahora/pasion-gavilanes-portada/11656333-1-esl-ES/pasion-gavilanes-portada.jpg?resize=980:* "
+          alt="Movie 6"
+        />
+        <div class="card-info">
+          <h3>Pacion De Gavinales</h3>
+
+          <p>
+            La vida de los Reyes-Elizondo transcurre con tranquilidad, hasta que
+            una muerte desencadena una serie de hechos que cambia sus destinos
+            para siempre.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula7 -->
+      <div class="card">
+        <img
+          src="    https://m.media-amazon.com/images/S/pv-target-images/8668245e2108a3f25c1ace070a0f59d7130b2c9b2f680d09d010aca3045f9cc5.jpg "
+          alt="Movie 7"
+        />
+        <div class="card-info">
+          <h3>El Capo</h3>
+          <p>
+            Pedro Pablo León Jaramillo, alias El Capo, es uno de los mayores
+            narcotraficantes de Colombia.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula8 -->
+      <div class="card">
+        <img
+          src="https://mx.web.img3.acsta.net/pictures/19/10/12/02/35/4834850.jpg "
+          alt="Movie 8"
+        />
+        <div class="card-info">
+          <h3>Rapido Y Furiosos 5</h3>
+          <p>
+            En Río de Janeiro, Dominic Toretto y Brian O'Conner reúnen a su
+            pandilla de corredores callejeros para llevar a cabo un atraco,
+          </p>
+        </div>
+      </div>
+      <!-- pelicula9 -->
+      <div class="card">
+        <img
+          src="  https://www.eluniverso.com/resizer/0rEnRwkTLkMICSbhEDGVcxaBCx8=/888x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/TP2OC6YP3JDALJCTCBWTIFLJYI.jpg "
+          alt="Movie 9"
+        />
+        <div class="card-info">
+          <h3>Sin Senos No Hay Paraiso</h3>
+          <p>
+            Una historia inspirada en la vida real y en la cual el deseo de
+            superación se convierte en ciega ambición, capaz de llevar al filo
+            del peligro todo lo que se valora... hasta la propia vida.
+          </p>
+        </div>
+      </div>
+      <!-- pelicula10 -->
+      <div class="card">
+        <img
+          src=" https://images-2.rakuten.tv/storage/snapshot/shot/db341190-b6b3-40a4-ae12-ef5e793599d6-snapshot-1590664544-width936-quality90.jpeg"
+        />
+        <div class="card-info">
+          <h3>Karate Kid</h3>
+          <p>
+            Dre Parker podría haber sido el chico más popular de Detroit, pero
+            la mudanza laboral de su madre lo llevó a China. Dre se enamora de
+            su compañera de clase Mei Ying pero las diferencias culturales hacen
+            que esa amistad sea imposible.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="  https://play-lh.googleusercontent.com/V-UjO4fJ3PsTUNJ67wVL5cAVAL1W83QXtlXgnacuDTfWI-_WzgS-Op4dDQngOGpaYVhE"
+        />
+        <div class="card-info">
+          <h3>Las Tortugas Ninja</h3>
+          <p>
+            Las aventuras de un grupo de jóvenes tortugas que practican los
+            artes marciales.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.colombia.com/cine/2018/8/aquaman-39819.jpg" />
+        <div class="card-info">
+          <h3>Aquaaman</h3>
+          <p>
+            Aquaman" nos revela los orígenes de Arthur Curry, mitad humano y
+            mitad atlante, que emprende el viaje de su vida para descubrir si es
+            merecedor de su destino: ser rey.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.justwatch.com/poster/189294992/s332/temporada-4"
+        />
+        <div class="card-info">
+          <h3>Vis A Vis</h3>
+          <p>
+            Macarena es una joven frágil e inocente que entra en la cárcel a la
+            espera de un juicio por un delito de malversación. En prisión,
+            ingresará a un mundo peligroso, completamente diferente a lo que
+            conocía
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWVUG5J2reaTdvX9XKRU-NA-lpwQcXYco2Cfi1anl3m3Rn3Dwl"
+        />
+        <div class="card-info">
+          <h3>Beekeeper: sentencia de muerte</h3>
+          <p>
+            Adam Clay se embarca en la misión de matar a los estafadores que
+            provocaron que su casera se suicidara tras robarle dinero para la
+            beneficencia
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSci1J1mSfb-AI_XsU2y0i3pDOOlXKekXXjd8PF3yNu778-WkOp"
+        />
+        <div class="card-info">
+          <h3>El Planeta De Simios</h3>
+          <p>
+            César y sus simios son obligados a enfrentar un conflicto mortal
+            contra un ejército de humanos liderado por un brutal coronel.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024 PelisHub</p>
+    </footer>
+    <script src="js/PlcGratis.js"></script>
+    
+  </body>
+</html>
